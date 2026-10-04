@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astana Early Academy — Premium Early Childhood Education</title>
+  <meta name="description" content="Astana Early Academy provides progressive, child-centered preschool, kindergarten, and STEM education in Astana, Kazakhstan.">
+
+  <!-- Google Fonts: Plus Jakarta Sans for modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CDN CSS (Must precede custom style.css) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS (Overrides Bootstrap and contains Task 1 custom mobile-first media queries) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Notification Bar: Shown only on Tablet and Desktop (Hidden on mobile) -->
+  <div class="top-announcement py-2 text-center d-none d-md-block text-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small><i class="bi bi-geo-alt-fill me-1"></i> Mangilik El Ave 55/2, Astana &bull; Open Mon-Fri: 07:30 - 19:00</small>
+      <small>
+        <span class="badge bg-warning text-dark me-2">Admissions Open 2026</span>
+        <i class="bi bi-telephone-fill me-1"></i> +7 (7172) 70-50-20
+      </small>
+    </div>
+  </div>
+
+  <!-- Mobile Quick Action Strip (Shown ONLY on mobile phones, hidden on >=md) -->
+  <div class="mobile-quick-call d-block d-md-none bg-primary text-white text-center py-2 px-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="small fw-semibold"><i class="bi bi-sparkles me-1"></i> Spring 2026 Enrollment</span>
+      <a href="tel:+77172705020" class="btn btn-sm btn-light text-primary fw-bold py-1 px-2">Call Now</a>
+    </div>
+  </div>
+
+  <!-- Main Navigation (Bootstrap Navbar with collapsible hamburger toggle) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm custom-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <span class="brand-icon me-2"><i class="bi bi-mortarboard-fill"></i></span>
+        <div>
+          <span class="brand-title">Astana Early Academy</span>
+          <span class="brand-tagline d-none d-sm-block">Excellence in Early Childhood</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="curriculum.html">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faculty.html">Faculty</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admissions.html">Admissions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Tuition Plans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button class="btn btn-primary rounded-pill px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#tourModal">
+              <i class="bi bi-calendar-check me-1"></i> Book a Tour
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 1: HERO SECTION (Bootstrap Grid + Components)                     -->
+  <!-- ========================================================================= -->
+  <header id="hero" class="hero-section py-5 py-lg-6 bg-light-gradient">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        
+        <!-- Text Column -->
+        <div class="col-12 col-lg-6 text-center text-lg-start">
+          <span class="badge rounded-pill bg-primary-subtle text-primary px-3 py-2 fw-semibold mb-3">
+            <i class="bi bi-star-fill text-warning me-1"></i> #1 Accredited Early Center in Astana
+          </span>
+          <h1 class="hero-title display-5 fw-extrabold text-dark mb-3">
+            Inspiring Bright Minds Through Play, Nature &amp; Discovery
+          </h1>
+          <p class="hero-lead lead text-secondary mb-4">
+            We provide a bilingual, Scandinavian-inspired environment where toddlers and preschoolers develop curiosity, emotional intelligence, and early STEM capabilities.
+          </p>
+          <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+            <button class="btn btn-primary btn-lg rounded-pill px-4 shadow" data-bs-toggle="modal" data-bs-target="#tourModal">
+              Schedule Campus Visit
+            </button>
+            <a href="#programs" class="btn btn-outline-secondary btn-lg rounded-pill px-4">
+              Explore Programs
+            </a>
+          </div>
+
+          <!-- Trust Badges (Hidden on tiny screens to optimize space, visible from sm up) -->
+          <div class="row mt-4 pt-3 border-top g-3 d-none d-sm-flex text-start">
+            <div class="col-4">
+              <h4 class="fw-bold mb-0 text-primary">15+</h4>
+              <small class="text-muted">Years Experience</small>
+            </div>
+            <div class="col-4">
+              <h4 class="fw-bold mb-0 text-primary">1 : 8</h4>
+              <small class="text-muted">Teacher-Child Ratio</small>
+            </div>
+            <div class="col-4">
+              <h4 class="fw-bold mb-0 text-primary">100%</h4>
+              <small class="text-muted">Organic Nutrition</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image Column -->
+        <div class="col-12 col-lg-6">
+          <div class="hero-image-wrapper position-relative text-center">
+            <img src="images/hero_classroom.jpg" alt="Children engaged in interactive creative learning at Astana Early Academy" class="img-fluid rounded-4 shadow-lg hero-img" loading="eager">
+            <!-- Floating Accent Badge (Desktop only) -->
+            <div class="floating-badge d-none d-lg-flex position-absolute bg-white p-3 rounded-4 shadow align-items-center">
+              <div class="badge-icon bg-success-subtle text-success rounded-circle me-3">
+                <i class="bi bi-shield-check fs-4"></i>
+              </div>
+              <div>
+                <p class="mb-0 fw-bold text-dark">Certified Safe Campus</p>
+                <small class="text-muted">24/7 Monitored &amp; Pediatric Care</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 2: ABOUT & METHODOLOGY (Bootstrap Grid with order-* column swap)  -->
+  <!-- Requirement: 2+ columns that stack on phone, with important one first     -->
+  <!-- ========================================================================= -->
+  <section id="about" class="about-section py-5 py-lg-6 bg-white">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        
+        <!-- On Mobile: Text is more important, so order-1 stacks it FIRST.           -->
+        <!-- On Desktop (lg): Text switches to order-lg-2 so image is on the left.    -->
+        <div class="col-12 col-lg-6 order-1 order-lg-2">
+          <span class="text-primary fw-bold text-uppercase tracking-wider small">Our Philosophy</span>
+          <h2 class="display-6 fw-bold text-dark mt-2 mb-3">
+            A Safe Space Where Every Child Flourishes Naturally
+          </h2>
+          <p class="text-secondary">
+            At Astana Early Academy, education is not about memorization—it is about nurturing curiosity and resilience. Our bespoke pedagogy blends Montessori exploratory principles with the Reggio Emilia project approach.
+          </p>
+          
+          <ul class="list-unstyled d-flex flex-column gap-3 my-4">
+            <li class="d-flex align-items-start">
+              <span class="feature-bullet text-primary me-3"><i class="bi bi-check-circle-fill fs-5"></i></span>
+              <div>
+                <strong class="text-dark d-block">Bilingual Immersion (English &amp; Kazakh/Russian)</strong>
+                <span class="text-muted small">Native educators guide language acquisition through natural daily conversations and storytelling.</span>
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <span class="feature-bullet text-primary me-3"><i class="bi bi-check-circle-fill fs-5"></i></span>
+              <div>
+                <strong class="text-dark d-block">Eco-Friendly Architecture &amp; Sensory Gardens</strong>
+                <span class="text-muted small">Constructed with non-toxic natural wood, HEPA air filtration, and direct access to green outdoor play spaces.</span>
+              </div>
+            </li>
+            <li class="d-flex align-items-start">
+              <span class="feature-bullet text-primary me-3"><i class="bi bi-check-circle-fill fs-5"></i></span>
+              <div>
+                <strong class="text-dark d-block">Early STEM &amp; Creative Arts Studio</strong>
+                <span class="text-muted small">Hands-on robotics blocks, sensory play, painting, music, and junior scientific experiments.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="mt-4">
+            <button class="btn btn-outline-primary rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#tourModal">
+              Learn More About Safety Standards
+            </button>
+          </div>
+        </div>
+
+        <!-- On Mobile: Image is secondary, so order-2 stacks it SECOND.               -->
+        <!-- On Desktop (lg): Image switches to order-lg-1 (first column on left).     -->
+        <div class="col-12 col-lg-6 order-2 order-lg-1">
+          <div class="about-image-card position-relative">
+            <img src="images/kindergarten_building.jpg" alt="Modern eco-friendly building of Astana Early Academy" class="img-fluid rounded-4 shadow">
+            <div class="about-card-badge bg-primary text-white p-3 rounded-3 position-absolute bottom-0 start-0 m-3 shadow">
+              <span class="fw-bold d-block"><i class="bi bi-award me-1"></i> National Quality Award</span>
+              <small class="text-white-50">Excellence in Preschool Pedagogy</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 3: EDUCATIONAL PROGRAMS (Bootstrap Grid Cards)                    -->
+  <!-- Requirement: Cards: 1 per row on phone, 2 on tablet, 3+ on laptop         -->
+  <!-- col-12 (phone: 1/row), col-md-6 (tablet: 2/row), col-lg-4 (laptop: 3/row)  -->
+  <!-- ========================================================================= -->
+  <section id="programs" class="programs-section py-5 py-lg-6 bg-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-primary fw-bold text-uppercase tracking-wider small">Curriculum Overview</span>
+        <h2 class="display-6 fw-bold text-dark mt-2 mb-3">Programs Tailored to Every Milestone</h2>
+        <p class="text-secondary">
+          Carefully structured age stages designed by certified developmental pediatricians and early learning experts.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Card 1: Toddlers -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm program-card rounded-4 overflow-hidden">
+            <div class="program-img-wrapper">
+              <img src="images/kindergarten_main.jpg" class="card-img-top program-img" alt="Toddlers playing safely">
+              <span class="badge bg-primary position-absolute top-0 end-0 m-3 rounded-pill px-3 py-2">Ages 1.5 - 3</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h3 class="card-title h4 fw-bold text-dark mb-2">Toddler Nest</h3>
+              <p class="card-text text-secondary mb-4 flex-grow-1">
+                Gentle transition from home to social learning. Focuses on motor skills, sensory discovery, early vocabulary, and emotional security.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li><i class="bi bi-clock me-2 text-primary"></i> 08:00 - 18:30</li>
+                <li><i class="bi bi-people me-2 text-primary"></i> Max 12 children per group</li>
+                <li><i class="bi bi-cup-hot me-2 text-primary"></i> 4 Chef-prepared meals daily</li>
+              </ul>
+              <button class="btn btn-outline-primary w-100 rounded-pill mt-auto" data-bs-toggle="modal" data-bs-target="#tourModal">
+                Inquire For Toddlers
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Preschool -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm program-card rounded-4 overflow-hidden">
+            <div class="program-img-wrapper">
+              <img src="images/kindergarten_about.jpg" class="card-img-top program-img" alt="Preschool children engaged in art and STEM">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3 rounded-pill px-3 py-2">Ages 3 - 5</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h3 class="card-title h4 fw-bold text-dark mb-2">Preschool Discovery</h3>
+              <p class="card-text text-secondary mb-4 flex-grow-1">
+                Hands-on inquiry learning, bilingual literacy, foundational mathematics, musical expression, and guided social collaboration.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li><i class="bi bi-clock me-2 text-success"></i> 08:00 - 18:30</li>
+                <li><i class="bi bi-people me-2 text-success"></i> Max 15 children per group</li>
+                <li><i class="bi bi-translate me-2 text-success"></i> Dual Language English immersion</li>
+              </ul>
+              <button class="btn btn-outline-success w-100 rounded-pill mt-auto" data-bs-toggle="modal" data-bs-target="#tourModal">
+                Inquire For Preschool
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Pre-K Academy -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm program-card rounded-4 overflow-hidden">
+            <div class="program-img-wrapper">
+              <img src="images/hero_classroom.jpg" class="card-img-top program-img" alt="Pre-K students in modern classroom">
+              <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 rounded-pill px-3 py-2">Ages 5 - 6.5</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h3 class="card-title h4 fw-bold text-dark mb-2">Pre-K Bridge to School</h3>
+              <p class="card-text text-secondary mb-4 flex-grow-1">
+                Advanced school readiness focusing on logic, reading comprehension, junior coding, science lab experiments, and self-confidence.
+              </p>
+              <ul class="list-unstyled small text-muted mb-4">
+                <li><i class="bi bi-clock me-2 text-warning"></i> 08:00 - 18:30</li>
+                <li><i class="bi bi-people me-2 text-warning"></i> Max 16 children per group</li>
+                <li><i class="bi bi-mortarboard me-2 text-warning"></i> Certified Primary School readiness</li>
+              </ul>
+              <button class="btn btn-outline-warning text-dark w-100 rounded-pill mt-auto" data-bs-toggle="modal" data-bs-target="#tourModal">
+                Inquire For Pre-K
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 4: TASK 1 - MEDIA QUERIES BY HAND (TUITION & MEMBERSHIP PLANS)    -->
+  <!-- MANDATORY ASSIGNMENT 3 RULES:                                             -->
+  <!-- 1. Pure custom CSS ONLY — ZERO Bootstrap classes in this entire section!  -->
+  <!-- 2. Mobile-first: base styles for phone (<768px: 1 column).                -->
+  <!-- 3. Breakpoint 1 (>=768px tablet): 2 columns.                              -->
+  <!-- 4. Breakpoint 2 (>=1024px laptop): 3 columns.                             -->
+  <!-- 5. Additional changes: heading size, card padding, featured scale/badge.  -->
+  <!-- ========================================================================= -->
+  <section id="pricing" class="custom-pricing-section">
+    <div class="custom-pricing-container">
+      
+      <!-- Section Header -->
+      <div class="custom-pricing-header">
+        <span class="custom-pricing-eyebrow">Task 1: Pure Hand-Crafted Media Queries</span>
+        <h2 class="custom-pricing-title">Tuition &amp; Enrollment Membership Plans</h2>
+        <p class="custom-pricing-subtitle">
+          Transparent, all-inclusive tuition with no hidden fees. Flexible attendance options tailored for modern families.
+        </p>
+      </div>
+
+      <!-- Responsive Grid Container (1 col on mobile, 2 col on tablet, 3 col on desktop) -->
+      <div class="custom-pricing-grid">
+        
+        <!-- Plan 1: Half-Day Explorer -->
+        <article class="custom-plan-card">
+          <div class="custom-plan-top">
+            <span class="custom-plan-type">Flexible Option</span>
+            <h3 class="custom-plan-name">Half-Day Explorer</h3>
+            <p class="custom-plan-summary">Perfect for gentle adaptation, toddlers, or part-time socialization.</p>
+          </div>
+          <div class="custom-plan-price-wrap">
+            <span class="custom-plan-currency">₸</span>
+            <span class="custom-plan-amount">145,000</span>
+            <span class="custom-plan-period">/ month</span>
+          </div>
+          <ul class="custom-plan-features">
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Morning sessions (08:00 – 13:00)</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Organic breakfast &amp; hot lunch</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Daily sensory &amp; motor activities</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Bilingual circle time</span>
+            </li>
+            <li class="custom-plan-feature-item custom-feature-muted">
+              <span class="custom-cross-icon">&times;</span>
+              <span>Afternoon STEM clubs not included</span>
+            </li>
+          </ul>
+          <div class="custom-plan-action">
+            <button type="button" class="custom-plan-btn" data-bs-toggle="modal" data-bs-target="#tourModal">Select Half-Day</button>
+          </div>
+        </article>
+
+        <!-- Plan 2: Full-Day All-Inclusive (FEATURED TIER) -->
+        <article class="custom-plan-card custom-plan-featured">
+          <div class="custom-featured-ribbon">Most Popular</div>
+          <div class="custom-plan-top">
+            <span class="custom-plan-type">Full Immersion</span>
+            <h3 class="custom-plan-name">Full-Day Academy</h3>
+            <p class="custom-plan-summary">Our comprehensive program covering pedagogy, creative arts, and full daytime care.</p>
+          </div>
+          <div class="custom-plan-price-wrap">
+            <span class="custom-plan-currency">₸</span>
+            <span class="custom-plan-amount">240,000</span>
+            <span class="custom-plan-period">/ month</span>
+          </div>
+          <ul class="custom-plan-features">
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Full-day schedule (08:00 – 18:30)</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>5 Balanced chef-crafted organic meals</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Full bilingual immersion (English/Kazakh)</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Music, gymnastics &amp; visual arts studios</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Pediatric checkups &amp; speech therapist</span>
+            </li>
+          </ul>
+          <div class="custom-plan-action">
+            <button type="button" class="custom-plan-btn custom-btn-featured" data-bs-toggle="modal" data-bs-target="#tourModal">Select Full-Day</button>
+          </div>
+        </article>
+
+        <!-- Plan 3: Pre-K Honors & STEM -->
+        <article class="custom-plan-card">
+          <div class="custom-plan-top">
+            <span class="custom-plan-type">School Readiness</span>
+            <h3 class="custom-plan-name">Pre-K STEM Honors</h3>
+            <p class="custom-plan-summary">Intensive school readiness for children entering leading international or NIS schools.</p>
+          </div>
+          <div class="custom-plan-price-wrap">
+            <span class="custom-plan-currency">₸</span>
+            <span class="custom-plan-amount">285,000</span>
+            <span class="custom-plan-period">/ month</span>
+          </div>
+          <ul class="custom-plan-features">
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Extended hours (07:30 – 19:00)</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>All Full-Day Academy amenities</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Lego Education robotics &amp; STEM lab</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Mental arithmetic &amp; speed reading</span>
+            </li>
+            <li class="custom-plan-feature-item">
+              <span class="custom-check-icon">&check;</span>
+              <span>Personal primary school admissions mentor</span>
+            </li>
+          </ul>
+          <div class="custom-plan-action">
+            <button type="button" class="custom-plan-btn" data-bs-toggle="modal" data-bs-target="#tourModal">Select Pre-K Honors</button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Custom Guarantee Footer inside Task 1 Section -->
+      <div class="custom-pricing-guarantee">
+        <p class="custom-guarantee-text">
+          <span class="custom-guarantee-star">&#9733;</span>
+          <strong>14-Day Adaptation Guarantee:</strong> If your child is unable to comfortably adapt within the first two weeks, unused tuition is 100% refunded.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 5: CAMPUS LIFE & TESTIMONIALS (Bootstrap Carousel Component)       -->
+  <!-- ========================================================================= -->
+  <section id="campus" class="campus-section py-5 py-lg-6 bg-white">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-primary fw-bold text-uppercase tracking-wider small">Community &amp; Culture</span>
+        <h2 class="display-6 fw-bold text-dark mt-2 mb-3">Life at Astana Early Academy</h2>
+        <p class="text-secondary">
+          Hear directly from parents who have seen their children grow into confident, curious young thinkers.
+        </p>
+      </div>
+
+      <div id="parentTestimonialsCarousel" class="carousel slide carousel-dark shadow-sm bg-light rounded-4 p-4 p-md-5" data-bs-ride="carousel">
+        <div class="carousel-indicators mb-0">
+          <button type="button" data-bs-target="#parentTestimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#parentTestimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#parentTestimonialsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner pb-5">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-item active text-center">
+            <div class="testimonial-content mx-auto max-w-700">
+              <div class="stars mb-3 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <blockquote class="fs-5 text-dark fst-italic mb-4">
+                &ldquo;Finding a kindergarten in Astana that balances genuine care, natural outdoor play, and strong English immersion was tough until we discovered Astana Early Academy. Our daughter wakes up excited every morning!&rdquo;
+              </blockquote>
+              <h5 class="fw-bold mb-0 text-dark">Dinara &amp; Ruslan Kassymov</h5>
+              <small class="text-muted">Parents of Ailin (Preschool Discovery Group)</small>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item text-center">
+            <div class="testimonial-content mx-auto max-w-700">
+              <div class="stars mb-3 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <blockquote class="fs-5 text-dark fst-italic mb-4">
+                &ldquo;The organic kitchen and clean Scandinavian architecture were what drew us in initially. But the teachers&rsquo; empathy and pedagogical depth are what make this place truly priceless.&rdquo;
+              </blockquote>
+              <h5 class="fw-bold mb-0 text-dark">Arman Serikov</h5>
+              <small class="text-muted">Father of Sanzhar (Toddler Nest Group)</small>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item text-center">
+            <div class="testimonial-content mx-auto max-w-700">
+              <div class="stars mb-3 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <blockquote class="fs-5 text-dark fst-italic mb-4">
+                &ldquo;The Pre-K STEM program prepared my son seamlessly for his elementary school assessment. His confidence in math, problem-solving, and bilingual expression blew us away.&rdquo;
+              </blockquote>
+              <h5 class="fw-bold mb-0 text-dark">Zhanar Toleubayeva</h5>
+              <small class="text-muted">Mother of Mansur (Pre-K Bridge Graduate)</small>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#parentTestimonialsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#parentTestimonialsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 6: FAQ ACCORDION (Bootstrap Accordion Component)                  -->
+  <!-- ========================================================================= -->
+  <section id="faq" class="faq-section py-5 py-lg-6 bg-light">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="text-primary fw-bold text-uppercase tracking-wider small">Got Questions?</span>
+        <h2 class="display-6 fw-bold text-dark mt-2 mb-3">Frequently Asked Questions</h2>
+        <p class="text-secondary">
+          Everything parents need to know about our daily routines, dietary safety, and enrollment steps.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="accordion shadow-sm rounded-4 overflow-hidden" id="academyFaqAccordion">
+            
+            <!-- Item 1 -->
+            <div class="accordion-item border-0 border-bottom">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What are the teacher-to-child ratios in each group?
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#academyFaqAccordion">
+                <div class="accordion-body text-secondary">
+                  We maintain strict, safety-certified ratios: 1:6 for Toddlers (ages 1.5–3), 1:8 for Preschool (ages 3–5), and 1:10 for Pre-K (ages 5–6). Each group has both a lead licensed pedagogue and an assistant educator at all times.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="accordion-item border-0 border-bottom">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How does the kitchen handle allergies and dietary restrictions?
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#academyFaqAccordion">
+                <div class="accordion-body text-secondary">
+                  All meals are prepared fresh daily in our on-campus professional kitchen by certified chefs. We cater individually to lactose intolerance, gluten allergies, vegetarian, and Halal-compliant dietary requirements.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="accordion-item border-0 border-bottom">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Can parents monitor the campus and visit during the day?
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#academyFaqAccordion">
+                <div class="accordion-body text-secondary">
+                  Yes! We maintain an active parent portal with daily digital activity logs, meal updates, and secure video access to common playground areas during recreation periods.
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="accordion-item border-0">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  What documents are needed for registration?
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#academyFaqAccordion">
+                <div class="accordion-body text-secondary">
+                  To register, parents need to provide: child&rsquo;s birth certificate copy, Form 026/u &amp; Form 065/u medical health records, parent identification, and the signed enrollment contract.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- SECTION 7: CAMPUS TOUR CTA & FOOTER                                       -->
+  <!-- ========================================================================= -->
+  <footer id="contact" class="footer bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        
+        <div class="col-12 col-md-4">
+          <div class="d-flex align-items-center mb-3">
+            <span class="brand-icon me-2 text-warning"><i class="bi bi-mortarboard-fill fs-3"></i></span>
+            <h4 class="fw-bold text-white mb-0">Astana Early Academy</h4>
+          </div>
+          <p class="text-white-50 small">
+            Nurturing inquisitive, kind, and confident future leaders in the heart of Astana. Fully licensed early learning ecosystem.
+          </p>
+          <div class="d-flex gap-3 text-white-50 fs-5 mt-3">
+            <a href="#" class="text-white-50 hover-text-white" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white-50 hover-text-white" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white-50 hover-text-white" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white-50 hover-text-white" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h5 class="fw-bold text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="#hero" class="text-white-50 text-decoration-none hover-text-white">Home</a></li>
+            <li><a href="#about" class="text-white-50 text-decoration-none hover-text-white">About Academy</a></li>
+            <li><a href="#programs" class="text-white-50 text-decoration-none hover-text-white">Programs</a></li>
+            <li><a href="#pricing" class="text-white-50 text-decoration-none hover-text-white">Tuition Plans</a></li>
+            <li><a href="#faq" class="text-white-50 text-decoration-none hover-text-white">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h5 class="fw-bold text-white mb-3">Programs</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="#programs" class="text-white-50 text-decoration-none hover-text-white">Toddler Nest</a></li>
+            <li><a href="#programs" class="text-white-50 text-decoration-none hover-text-white">Preschool Discovery</a></li>
+            <li><a href="#programs" class="text-white-50 text-decoration-none hover-text-white">Pre-K Bridge</a></li>
+            <li><a href="#programs" class="text-white-50 text-decoration-none hover-text-white">Bilingual Immersion</a></li>
+            <li><a href="#programs" class="text-white-50 text-decoration-none hover-text-white">Summer Science Camp</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold text-white mb-3">Campus Admissions</h5>
+          <p class="text-white-50 small mb-2"><i class="bi bi-geo-alt me-2 text-warning"></i> Mangilik El Ave 55/2, Astana, Kazakhstan</p>
+          <p class="text-white-50 small mb-2"><i class="bi bi-telephone me-2 text-warning"></i> +7 (7172) 70-50-20</p>
+          <p class="text-white-50 small mb-3"><i class="bi bi-envelope me-2 text-warning"></i> admissions@astana-academy.kz</p>
+          <button class="btn btn-warning fw-bold rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#tourModal">
+            <i class="bi bi-send-fill me-1"></i> Request Prospectus
+          </button>
+        </div>
+
+      </div>
+
+      <div class="border-top border-secondary pt-4 text-center text-white-50 small d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">&copy; 2026 Astana Early Academy. All rights reserved.</p>
+        <p class="mb-0">Assignment #3 &bull; Web Technologies 1 &bull; Astana IT University &bull; Student: Abay Amirzhanuly (IT-2510)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- BOOTSTRAP MODAL COMPONENT: Book Campus Tour Form                          -->
+  <!-- ========================================================================= -->
+  <div class="modal fade" id="tourModal" tabindex="-1" aria-labelledby="tourModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0">
+          <div>
+            <h5 class="modal-title fw-bold text-dark" id="tourModalLabel">Book a Private Campus Tour</h5>
+            <small class="text-muted">Experience our classrooms, playgrounds, and organic dining firsthand.</small>
+          </div>
+          <button type="button" class="btn-close" data-bs-target="#tourModal" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-3">
+          <form id="tourBookingForm" onsubmit="event.preventDefault(); alert('Thank you! Our admissions coordinator will contact you within 24 hours to confirm your private campus visit.'); bootstrap.Modal.getInstance(document.getElementById('tourModal')).hide();">
+            <div class="mb-3">
+              <label for="parentNameInput" class="form-label small fw-semibold text-dark">Parent / Guardian Name</label>
+              <input type="text" class="form-control rounded-3" id="parentNameInput" placeholder="e.g. Aigerim Bolatova" required>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label for="parentPhoneInput" class="form-label small fw-semibold text-dark">Phone Number</label>
+                <input type="tel" class="form-control rounded-3" id="parentPhoneInput" placeholder="+7 (701) 000-00-00" required>
+              </div>
+              <div class="col-6">
+                <label for="parentEmailInput" class="form-label small fw-semibold text-dark">Email Address</label>
+                <input type="email" class="form-control rounded-3" id="parentEmailInput" placeholder="name@example.com" required>
+              </div>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6">
+                <label for="childAgeSelect" class="form-label small fw-semibold text-dark">Child's Age</label>
+                <select class="form-select rounded-3" id="childAgeSelect" required>
+                  <option value="" disabled selected>Select age</option>
+                  <option value="1.5-3">1.5 - 3 yrs (Toddler)</option>
+                  <option value="3-5">3 - 5 yrs (Preschool)</option>
+                  <option value="5-6.5">5 - 6.5 yrs (Pre-K)</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label for="tourDateInput" class="form-label small fw-semibold text-dark">Preferred Date</label>
+                <input type="date" class="form-control rounded-3" id="tourDateInput" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="tourNotesInput" class="form-label small fw-semibold text-dark">Special Interests or Questions (Optional)</label>
+              <textarea class="form-control rounded-3" id="tourNotesInput" rows="2" placeholder="e.g. Bilingual focus, allergy requirements..."></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="tourConsentCheck" required checked>
+              <label class="form-check-label small text-muted" for="tourConsentCheck">
+                I agree to be contacted by Astana Early Academy regarding admissions.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-2 rounded-pill fw-bold shadow-sm">
+              Confirm Campus Tour Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 CDN Bundle JS (Includes Popper for modals, dropdowns, collapse) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
